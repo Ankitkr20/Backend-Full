@@ -1,10 +1,10 @@
 {
-  "name": "backedfull",
+  "name": "deployapp",
   "version": "1.0.0",
   "description": "A basic App to Deploy",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/Ankitkr20/Backend-Full/issues"
   },
-  "homepage": "https://github.com/Ankitkr20/Backend-Full#readme"
+  "homepage": "https://github.com/Ankitkr20/Backend-Full#readme",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0"
+  }
 }
