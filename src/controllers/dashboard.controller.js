@@ -8,6 +8,12 @@ import {asyncHandler} from "../utils/asyncHandler.js"
 
 const getChannelStats = asyncHandler(async (req, res) => {
     // TODO: Get the channel stats like total video views, total subscribers, total videos, total likes etc.
+    if(!req.user){
+        throw new ApiError(401,"You need to login first")
+    }
+    const {username} = req.params
+
+    
 })
 
 const getChannelVideos = asyncHandler(async (req, res) => {
